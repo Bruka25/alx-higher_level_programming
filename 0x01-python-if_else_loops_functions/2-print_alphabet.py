@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-for l in 'abcdefghijklmnopqrstuvwxyz':
-    print("{:s}".format(l), end="")
+for char in 'abcdefghijklmnopqrstuvwxyz':
+    print("{:s}".format(char), end="")
