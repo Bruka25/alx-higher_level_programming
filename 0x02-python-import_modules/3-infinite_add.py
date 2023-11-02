@@ -4,7 +4,7 @@ if __name__ == "__main__":
 
     import sys
     """
-    infinitely add the arguments starting 
+    infinitely add the arguments starting
     from the index 1
     """
     args = 0
