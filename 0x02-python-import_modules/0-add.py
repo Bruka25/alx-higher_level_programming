@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
 
-    """from the add_0 module import add function"""
+    """from the add0 module import add function"""
     from add_0 import add
 
     a = 1
