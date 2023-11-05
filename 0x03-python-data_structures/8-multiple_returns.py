@@ -5,7 +5,7 @@ def multiple_returns(sentence):
 
 # if sentence is empty return None
     if not sentence:
-        return (0,None)
+        return (0, None)
 
     first = sentence[0]
     return length, first
