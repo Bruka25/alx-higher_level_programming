@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
 
-    add=[]
+    add = []
 
     for i in range(2):
         # if a tuple has a value use otherwise make it 0
@@ -11,4 +11,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
         add.append(value_a + value_b)
 
     output = tuple(add)
-    return output 
+    return output
