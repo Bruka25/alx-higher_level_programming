@@ -24,7 +24,7 @@ void print_python_list(PyObject *p)
 
 	for (j = 0; j < size; j++)
 	{
-		list_type = pylist->ob_item[i]->ob_type->tp_name;
+		list_type = pylist->ob_item[j]->ob_type->tp_name;
 		printf("Element %d: %s\n", j, list_type);
 		if (strcmp(list_type, "bytes") == 0)
 			print_python_bytes(pylist->ob_item[j]);
