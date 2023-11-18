@@ -1,13 +1,15 @@
 Higher-Level Programming Concepts Repository
+
 Overview
 Welcome to the Higher-Level Programming Concepts Repository! This repository contains a collection of projects exploring various concepts and applications within higher-level programming languages.
 
-Table of Contents
-Introduction
-Projects
-Usage
-Contributing
-License
+* Table of Contents
+* Introduction
+* Projects
+* Usage
+* Contributing
+* License
+
 Introduction
 This repository serves as a platform to explore and demonstrate the versatility and capabilities of higher-level programming languages. Higher-level languages are designed to offer abstraction, ease of use, and a higher level of expressiveness compared to lower-level languages.
 
