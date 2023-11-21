@@ -57,7 +57,7 @@ class Square:
 
     def get_str(self):
         count = ""
-        if self.__size is 0:
+        if self.__size == 0:
             count += "\n"
             return count
         for i in range(self.__position[1]):
