@@ -2,12 +2,12 @@
 
 """
 Another square class based on the previous tasks
-
 Size is private instance attribute
 Error will be raised on invalid inputs
 def area(self): returns size of area
 Getters and setters for private instance attribute size
 def my_print(self): that prints in stdout the square with the character #
+
 """
 
 
@@ -15,11 +15,11 @@ class Square:
 
     """
     Class that defines a square by size, which defaults 0
-       if size is equal to 0 print an empty line
-       position must be a tuple of 2 positive integers
-       position should be use by using space
-       lines should not be filled by spaces
-       when position[1] > 0
+    if size is equal to 0 print an empty line
+    position must be a tuple of 2 positive integers
+    position should be use by using space
+    lines should not be filled by spaces
+    when position[1] > 0
     """
 
     def __init__(self, size=0, position=(0, 0)):
