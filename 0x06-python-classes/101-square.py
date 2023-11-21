@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 
-"""
-Another square class based on the previous tasks
+ """Class that defines a square by size, which defaults 0
+       if size is equal to 0 print an empty line
+       position must be a tuple of 2 positive integers
+       position should be use by using space 
+       lines should not be filled by spaces 
+       when position[1] > 0
+       Getters and setters for private instance attribute size
+       def my_print(self): that prints in stdout the square with 
+       the character #
 
-Size is private instance attribute
-Error will be raised on invalid inputs
-def area(self): returns size of area
-Getters and setters for private instance attribute size
-def my_print(self): that prints in stdout the square with the character #
-Method __output_str__ should return the string to print out the square
-"""
-
+    """
 
 class Square:
 
@@ -22,6 +22,18 @@ class Square:
        lines should not be filled by spaces
        when position[1] > 0
     """
+
+    class Square:
+
+    """
+    Class that defines a square by size, which defaults 0
+       if size is equal to 0 print an empty line
+       position must be a tuple of 2 positive integers
+       position should be use by using space
+       lines should not be filled by spaces
+       when position[1] > 0
+    """
+
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -51,13 +63,13 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-    def __output_str__(self):
-        return (self.string_getter())
+    def __repr__(self):
+        return (self.get_str())
 
     def area(self):
         return self.__size * self.__size
 
-    def string_getter(self):
+    def get_str(self):
 
         count = ""
         if self.__size is 0:
@@ -73,4 +85,6 @@ class Square:
         return count
 
     def my_print(self):
-        print(self.string_getter())
+        print(self.get_str())
+
+
