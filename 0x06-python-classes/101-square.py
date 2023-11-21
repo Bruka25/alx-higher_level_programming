@@ -57,7 +57,7 @@ class Square:
     def area(self):
         return self.__size * self.__size
 
-    def str_getter(self):
+    def string_getter(self):
 
         count = ""
         if self.__size is 0:
