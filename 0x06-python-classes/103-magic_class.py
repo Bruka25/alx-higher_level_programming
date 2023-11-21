@@ -1,8 +1,17 @@
 #!/usr/bin/python3
 
+import math
+
+
+"""
+This magicClass does exactly what the provided
+bytecode does
+"""
+
+
 class MagicClass:
     """
-    Represent a circle
+    Repr a circle
     with attributes
     """
 
