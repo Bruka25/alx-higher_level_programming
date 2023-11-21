@@ -33,20 +33,20 @@ class Square:
     def area(self):
         return self.__size * self.__size
 
-    def __lessThan__(self, other):
-        return self.__size < other.size
+    def __ge__(self, other):
+        return self.__size >= other.size
 
-    def __lessOrEqual__(self, other):
-        return self.__size <= other.size
-
-    def __equal__(self, other):
-        return self.__size == other.size
-
-    def __negate__(self, other):
-        return self.__size != other.size
-
-    def __greater__(self, other):
+    def __gt__(self, other):
         return self.__size > other.size
 
-    def __greaterOrEqual__(self, other):
-        return self.__size >= other.size
+    def __ne__(self, other):
+        return self.__size != other.size
+
+    def __eq__(self, other):
+        return self.__size == other.size
+
+    def __le__(self, other):
+        return self.__size <= other.size
+
+    def __lt__(self, other):
+        return self.__size < other.size
