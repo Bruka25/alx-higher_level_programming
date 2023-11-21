@@ -62,7 +62,7 @@ class Square:
         count = ""
         if self.__size is 0:
             count += "\n"
-            return total
+            return count
         for i in range(self.__position[1]):
             count += "\n"
         for i in range(self.__size):
