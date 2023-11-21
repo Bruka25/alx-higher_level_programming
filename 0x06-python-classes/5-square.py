@@ -14,7 +14,7 @@ Getters and setters for private instance attribute size
 class Square:
 
     """Class that defines a square by size
-       def my_print(self): that prints in stdout 
+       def my_print(self): that prints in stdout
        the square with the character #
     """
     def __init__(self, size=0):
