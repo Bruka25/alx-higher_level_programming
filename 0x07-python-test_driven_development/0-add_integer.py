@@ -13,11 +13,33 @@ def add_integer(a, b):
     """Return the sum of two integers or floats as an integer
        raises a TypeError for invalid argument type
     """
-    add = list(map(lambda x: isinstance(x, (int, float)), [a, b]))
+    if type(a) not in (int, float):
+        raise TypeError('a must be an integer')
 
-    if all(add):
-        return int(a) + int(b)
+    if type(b) not in (int, float):
+        raise TypeError('b must be an integer')
 
-    for x, y in list(zip(add, ['a', 'b'])):
-        if not x:
-            raise TypeError("{} must be an integer".format(y))
+    a = change_to_int(a)
+    b = change_to_int(b)
+
+    return a + b
+
+
+def change_to_int(num):
+    """Cast the data type of num argument
+
+    Convert a float number to an int
+
+    Args:
+        num (:obj:`int, float`): The number to cast
+
+    Returns:
+         number to be casted to integer
+
+    """
+
+    if type(num) is float:
+        num = int(num)
+        return num
+
+    return num
