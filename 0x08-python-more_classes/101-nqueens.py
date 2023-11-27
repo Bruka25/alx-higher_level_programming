@@ -100,7 +100,7 @@ def x_board(chess, row, col):
         j -= 1
 
 
-def solve_recursively(board, row, queens, solutions):
+def solve_recursively(chess, row, queens, solve):
     """Solve an N-queens puzzle recursively
 
     Args:
@@ -112,19 +112,19 @@ def solve_recursively(board, row, queens, solutions):
         solve
     """
 
-    if queens == len(board):
+    if queens == len(chess):
         solve.append(solved_board(chess))
-        return (solve)
+        return solve
 
-    for j in range(len(board)):
+    for j in range(len(chess)):
 
         if chess[row][j] == " ":
-            temp = board_deepcopy(board)
+            temp = deep_copy(chess)
             temp[row][j] = "Q"
             x_board(temp, row, j)
             solve = solve_recursively(temp, row + 1, queens + 1, solve)
 
-        return (solve)
+    return solve
 
 
 if __name__ == "__main__":
