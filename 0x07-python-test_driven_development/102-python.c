@@ -1,4 +1,4 @@
-#include "Py.h"
+#include "py.h"
 
 /**
  *print_python_string - Prints information about Python strings
@@ -21,7 +21,7 @@ void print_python_string(PyObject *p)
 		return;
 	}
 
-	len = ((PyASCIIObject *)(p))->len;
+	len = ((PyASCIIObject *)(p))->length;
 
 	if (PyUnicode_IS_COMPACT_ASCII(p))
 		printf("  type: compact ascii\n");
