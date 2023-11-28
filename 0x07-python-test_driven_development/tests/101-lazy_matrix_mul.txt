@@ -189,8 +189,8 @@ integers or floats!
     Traceback (most recent call last):
     TypeError: Object arrays are not currently supported
 
-Finally, the length of all rows in matrices ``m_a`` and ``m_b`` should be
-equivalent. Otherwise, a ValueError is raised
+The length of all rows in matrices ``m_a`` and ``m_b`` should be
+equivalent. Otherwise, a TypeError is raised
 
 ::
 

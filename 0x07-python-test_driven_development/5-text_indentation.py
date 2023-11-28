@@ -30,7 +30,7 @@ def text_indentation(text):
     start = True
 
     while index < length:
-        if text[index] == ' ' and star is True:
+        if text[index] == ' ' and start is True:
             index += 1
             continue
 
