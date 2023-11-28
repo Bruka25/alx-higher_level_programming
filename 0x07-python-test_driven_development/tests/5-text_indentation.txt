@@ -1,0 +1,121 @@
+===================================
+This is the text indentation module
+===================================
+
+First Import module to use it:
+=============================
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+This function Function:
+=====================
+That prints a text with 2 new lines after
+each of these characters: ., ? and :
+
+
+Invalid inputs:
+==============
+    * text must be a string, otherwise raise a TypeError exception
+    with the message 'text must be a string'.
+
+    * There should be no space at the beginning or at the
+    end of each printed line.
+
+
+No-argumnets
+=========================
+
+Test case #0: A test case without parameters
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+Correct arguments
+=============================
+
+Case #1: A test case with a short text
+
+    >>> text_indentation('Biruk Assefa')
+    Biruk Assefa
+
+Case #2: A test case with a short text and a character for 2 new lines
+
+    >>> text_indentation('Biruk Assefa?')
+    Biruk Assefa?
+    <BLANKLINE>
+
+Case #3: A test case with a short text and characters for 6 new lines
+
+    >>> text_indentation("Hello world. Biruk Assefa? It's is:")
+    Hello world.
+    <BLANKLINE>
+    Biruk Assefa?
+    <BLANKLINE>
+    It's is:
+    <BLANKLINE>
+
+Case #4: A test case with a text with a special format
+
+    >>> text_indentation("""Bye world. \
+    ... Biruk Assefa? \
+    ... Isn't""")
+    Bye world.
+    <BLANKLINE>
+    Biruk Assefa?
+    <BLANKLINE>
+    Isn't
+
+Case #5: A test case with only spaces and characters to prints newlines
+
+    >>> text_indentation("   ?:.   ")
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+Case #6: Another test case with only spaces and characters to prints newlines
+
+    >>> text_indentation("  .??:?.  ")
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+Incorrect Parameters
+====================
+
+Case #7: A test case with an integer parameter
+
+    >>> text_indentation(27)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Case #8: A test case with an boolean parameter
+
+    >>> text_indentation(True)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Case #9: A test case with a data type parameter
+
+    >>> text_indentation(str)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Case #10: A test case with an infinite float number
+
+    >>> text_indentation(1e400)
+    Traceback (most recent call last):
+    TypeError: text must be a string
