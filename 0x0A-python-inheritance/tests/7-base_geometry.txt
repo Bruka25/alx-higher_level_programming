@@ -14,8 +14,8 @@ First import ``BaseGeometry`` from the ``7-base_geometry`` module:
 
 Let's use it:
 
-    >>> Base = BaseGeometry()
-    >>> type(Base)
+    >>> bg = BaseGeometry()
+    >>> type(bg)
     <class '7-base_geometry.BaseGeometry'>
 
 
@@ -32,7 +32,7 @@ This class should define 2 functions
 Methods test the publicity of the methods
 
 No instance attributes or methods
-    >>> dir(Base) == dir(BaseGeometry)
+    >>> dir(bg) == dir(BaseGeometry)
     True
 
 ===================
@@ -40,7 +40,7 @@ Let's test ``area``
 ===================
 
 If it's not applied
-    >>> Base.area()
+    >>> bg.area()
     Traceback (most recent call last):
     Exception: area() is not implemented
 
@@ -50,15 +50,15 @@ Let's test ``integer_validator``
 
 Two arguments must be provided
 
-    >>> Base.integer_validator()
+    >>> bg.integer_validator()
     Traceback (most recent call last):
     TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-    >>> Base.integer_validator(4)
+    >>> bg.integer_validator(4)
     Traceback (most recent call last):
     TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
 
-    >>> Base.integer_validator(4, 6, 7)
+    >>> bg.integer_validator(4, 6, 7)
     Traceback (most recent call last):
     TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
 
@@ -70,11 +70,11 @@ Let's test the type
      >>> def geo_test(tests=[]):
      ...     for test in tests:
      ...         try:
-     ...	     Base.integer_validator("name", test)
+     ...	     bg.integer_validator("name", test)
      ...       	 except Exception as e:
      ...      	     print("[{}] {} for type {}".format(e.__class__.__name__, e, type(test)))
 
-     >>> tests = [False, 1.55, -65.87, set(), [3, 2], "Biruk", {"b":4}, ("4", 6), geo_test, Base, BaseGeometry, None]
+     >>> tests = [False, 1.55, -65.87, set(), [3, 2], "Biruk", {"b":4}, ("4", 6), geo_test, bg, BaseGeometry, None]
      >>> geo_test(tests)
      [TypeError] name must be an integer for type <class 'bool'>
      [TypeError] name must be an integer for type <class 'float'>
@@ -94,13 +94,13 @@ Let's test the type
 Let's test sign
 ===============
 
-     >>> Base.integer_validator("name", -11)
+     >>> bg.integer_validator("name", -11)
      Traceback (most recent call last):
      ValueError: name must be greater than 0
 
-     >>> Base.integer_validator("name", 0)
+     >>> bg.integer_validator("name", 0)
      Traceback (most recent call last):
      ValueError: name must be greater than 0
 
 If the appropriate parameters are given the module won't return nothing
-     >>> Base.integer_validator("name", 3)
+     >>> bg.integer_validator("name", 3)
