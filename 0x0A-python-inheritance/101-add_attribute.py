@@ -10,8 +10,7 @@ def add_attribute(obj, attr, val):
        Raises a TypeError if if the object can’t have new attribute
        with parametrs of attritbute, object and value
     """
-    response = getattr(obj, "__doc__", None)
-    if response is None:
-        setattr(obj, attr, val)
-    else:
+
+    if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
+    setattr(obj, attr, val)
