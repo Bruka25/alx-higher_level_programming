@@ -1,0 +1,106 @@
+================================
+Doctest for Base Geometry module
+================================
+
+==================
+Let's execute it
+==================
+
+This is an example text file in reStructuredText format
+
+First import ``BaseGeometry`` from the ``7-base_geometry`` module:
+
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+Let's use it:
+
+    >>> Base = BaseGeometry()
+    >>> type(Base)
+    <class '7-base_geometry.BaseGeometry'>
+
+
+This class should define 2 functions
+
+``area``
+    >>> 'area' in dir(BaseGeometry)
+    True
+
+``integer_validator``
+    >>> 'integer_validator' in dir(BaseGeometry)
+    True
+
+Methods test the publicity of the methods
+
+No instance attributes or methods
+    >>> dir(Base) == dir(BaseGeometry)
+    True
+
+===================
+Let's test ``area``
+===================
+
+If it's not applied
+    >>> Base.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+
+================================
+Let's test ``integer_validator``
+================================
+
+Two arguments must be provided
+
+    >>> Base.integer_validator()
+    Traceback (most recent call last):
+    TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> Base.integer_validator(4)
+    Traceback (most recent call last):
+    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+    >>> Base.integer_validator(4, 6, 7)
+    Traceback (most recent call last):
+    TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
+
+
+====================
+Let's test the type
+====================
+
+     >>> def geo_test(tests=[]):
+     ...     for test in tests:
+     ...         try:
+     ...	     Base.integer_validator("name", test)
+     ...       	 except Exception as e:
+     ...      	     print("[{}] {} for type {}".format(e.__class__.__name__, e, type(test)))
+
+     >>> tests = [False, 1.55, -65.87, set(), [3, 2], "Biruk", {"b":4}, ("4", 6), geo_test, Base, BaseGeometry, None]
+     >>> geo_test(tests)
+     [TypeError] name must be an integer for type <class 'bool'>
+     [TypeError] name must be an integer for type <class 'float'>
+     [TypeError] name must be an integer for type <class 'float'>
+     [TypeError] name must be an integer for type <class 'set'>
+     [TypeError] name must be an integer for type <class 'list'>
+     [TypeError] name must be an integer for type <class 'str'>
+     [TypeError] name must be an integer for type <class 'dict'>
+     [TypeError] name must be an integer for type <class 'tuple'>
+     [TypeError] name must be an integer for type <class 'function'>
+     [TypeError] name must be an integer for type <class '7-base_geometry.BaseGeometry'>
+     [TypeError] name must be an integer for type <class 'type'>
+     [TypeError] name must be an integer for type <class 'NoneType'>
+
+
+===============
+Let's test sign
+===============
+
+     >>> Base.integer_validator("name", -11)
+     Traceback (most recent call last):
+     ValueError: name must be greater than 0
+
+     >>> Base.integer_validator("name", 0)
+     Traceback (most recent call last):
+     ValueError: name must be greater than 0
+
+If the appropriate parameters are given the module won't return nothing
+     >>> Base.integer_validator("name", 3)
