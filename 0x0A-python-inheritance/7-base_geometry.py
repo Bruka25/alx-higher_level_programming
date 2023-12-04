@@ -3,8 +3,8 @@
 """
    Another geometry class based on the
    previous one
-   public instance method: def area(self)
-   Public instance method: def integer_validator(self, name, value):
+   public instance method: def area
+   Public instance method: def integer_validator
    that validates value
 """
 
