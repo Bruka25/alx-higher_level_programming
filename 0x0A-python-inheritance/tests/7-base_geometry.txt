@@ -67,42 +67,39 @@ Two arguments must be provided
 Let's test the type
 ====================
 
-     >>> def geo_test(tests=[]):
-     ...     for test in tests:
-     ...         try:
-     ...	     bg.integer_validator("name", test)
-     ...       	 except Exception as e:
-     ...      	     print("[{}] {} for type {}".format(e.__class__.__name__, e, type(test)))
+    >>> def geo_test(tests=[]):
+    ...     for test in tests:
+    ...         try:
+    ...             bg.integer_validator("name", test)
+    ...         except Exception as e:
+    ...             print("[{}] {} for type {}".format(e.__class__.__name__, e, type(test)))
 
-     >>> tests = [False, 1.55, -65.87, set(), [3, 2], "Biruk", {"b":4}, ("4", 6), geo_test, bg, BaseGeometry, None]
-     >>> geo_test(tests)
-     [TypeError] name must be an integer for type <class 'bool'>
-     [TypeError] name must be an integer for type <class 'float'>
-     [TypeError] name must be an integer for type <class 'float'>
-     [TypeError] name must be an integer for type <class 'set'>
-     [TypeError] name must be an integer for type <class 'list'>
-     [TypeError] name must be an integer for type <class 'str'>
-     [TypeError] name must be an integer for type <class 'dict'>
-     [TypeError] name must be an integer for type <class 'tuple'>
-     [TypeError] name must be an integer for type <class 'function'>
-     [TypeError] name must be an integer for type <class '7-base_geometry.BaseGeometry'>
-     [TypeError] name must be an integer for type <class 'type'>
-     [TypeError] name must be an integer for type <class 'NoneType'>
+    >>> tests = [False, 1.55, -65.87, set(), [3, 2], "Biruk", {"b":4}, ("4", 6), geo_test, bg, BaseGeometry, None]
+    >>> geo_test(tests)
+    [TypeError] name must be an integer for type <class 'bool'>
+    [TypeError] name must be an integer for type <class 'float'>
+    [TypeError] name must be an integer for type <class 'float'>
+    [TypeError] name must be an integer for type <class 'set'>
+    [TypeError] name must be an integer for type <class 'list'>
+    [TypeError] name must be an integer for type <class 'str'>
+    [TypeError] name must be an integer for type <class 'dict'>
+    [TypeError] name must be an integer for type <class 'tuple'>
+    [TypeError] name must be an integer for type <class 'function'>
+    [TypeError] name must be an integer for type <class '7-base_geometry.BaseGeometry'>
+    [TypeError] name must be an integer for type <class 'type'>
+    [TypeError] name must be an integer for type <class 'NoneType'>
 
 
 ===============
 Let's test sign
 ===============
 
-     >>> bg.integer_validator("name", -11)
-     Traceback (most recent call last):
-     ValueError: name must be greater than 0
+    >>> bg.integer_validator("name", -11)
+    Traceback (most recent call last):
+    ValueError: name must be greater than 0
 
-     >>> bg.integer_validator("name", 0)
-     Traceback (most recent call last):
-     ValueError: name must be greater than 0
+    >>> bg.integer_validator("name", 0)
+    Traceback (most recent call last):
+    ValueError: name must be greater than 0
 
-
-If the appropriate parameters are given the module won't return nothing
-
-     >>> bg.integer_validator("name", 3)
+    >>> bg.integer_validator("name", 3)
