@@ -6,45 +6,46 @@ This is the Print Sorted List module
 Let's execute MyList
 ====================
 
-This is an example text file in reStructuredText format.
-First import ``MyList`` from the ``1-my_list`` module:
+This is an example text file in reStructuredText format
+
+First import MyList from the 1-my_list module:
 
     >>> MyList = __import__("1-my_list").MyList
 
-Now use it:
+Let's test it:
 
-    >>> a = MyList()
-    >>> a
+    >>> b = MyList()
+    >>> b
     []
 
-    >>> a.append(2)
-    >>> a
+    >>> b.append(2)
+    >>> b
     [2]
 
-    >>> a.append(5)
-    >>> a.append(3)
-    >>> a
+    >>> b.append(5)
+    >>> b.append(3)
+    >>> b
     [2, 5, 3]
 
-    >>> a.print_sorted()
+    >>> b.print_sorted()
     [2, 3, 5]
 
-    >>> a.append("z")
-    >>> a
-    [1, 5, 3, 'z']
+    >>> b.append("z")
+    >>> b
+    [2, 5, 3, 'z']
 
-    >>> a.print_sorted()
+    >>> b.print_sorted()
     Traceback (most recent call last):
         ...
-    TypeError: unorderable types: str() < int()
+    TypeError: '<' not supported between instances of 'str' and 'int'
 
     >>> i = MyList()
-    >>> b.append(3)
-    >>> b.append(-2)
-    >>> b.append(4)
-    >>> b.append(5)
+    >>> i.append(3)
+    >>> i.append(-2)
+    >>> i.append(4)
+    >>> i.append(5)
     >>> i
     [3, -2, 4, 5]
 
-    >>> b.print_sorted()
+    >>> i.print_sorted()
     [-2, 3, 4, 5]
