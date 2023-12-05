@@ -6,14 +6,11 @@
 """
 
 
-def number_of_lines(filename=""):
+def write_file(filename="", text=""):
     """returns the total of the number of
        lines, with filename the name of the
-       file
+       file and text the string of the file
     """
 
-    total = 0
-    with open(filename, encoding="utf-8") as file:
-        for line in file:
-            total += 1
-    return total
+    with open(filename, mode="w", encoding="utf-8") as file:
+        return file.write(text)
