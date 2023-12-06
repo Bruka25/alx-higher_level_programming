@@ -57,11 +57,11 @@ Two arguments must be provided
 
     >>> bg.integer_validator(4)
     Traceback (most recent call last):
-    TypeError: integer_validator() missing 1 required positional arguments: 'value'
+    TypeError: BaseGeometry.integer_validator() missing 1 required positional arguments: 'value'
 
     >>> bg.integer_validator(4, 6, 7)
     Traceback (most recent call last):
-    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+    TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
 
 
 ====================
