@@ -39,3 +39,55 @@ class Square(Rectangle):
         """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+
+    def update(self, *args, **kwargs):
+        """Update with the given positional
+           argument
+
+        Args:
+            *args type(int): Variable positional arguments
+                -> Id attribute is the first argument
+                -> Width attribute is the second
+                -> Height attribute is the third
+                -> x attribute is the fourth
+                -> Y atttribute is the fifth
+            **kwargs: Pointer to pointer to the key/value
+                      pairs
+        """
+        if args and len(args) != 0:
+
+            pos = 0
+            for arg in args:
+                if pos == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
+
+                elif pos == 1:
+                    self.width = arg
+                elif pos == 2:
+                    self.height = arg
+                elif pos == 3:
+                    self.x = arg
+                elif pos == 4:
+                    self.y = arg
+                pos += 1
+
+        elif kwargs and len(kwargs) != 0:
+
+            for key, val in kwargs.items():
+                if key == "id":
+                    if val is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = val
+
+                elif key == "width":
+                    self.width = val
+                elif key == "height":
+                    self.height = val
+                elif key == "x":
+                    self.x = val
+                elif key == "y":
+                    self.y = val
