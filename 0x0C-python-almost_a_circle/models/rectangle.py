@@ -115,3 +115,35 @@ class Rectangle(Base):
         return '[Rectangle] ({}) {}/{} - {}/{}'.format(
             self.id, self.x, self.y, self.width, self.height
         )
+
+    def update(self, *args):
+        """Update with the given positional
+           argument
+
+        Args:
+            *args type(int): Variable positional arguments
+                -> Id attribute is the first argument
+                -> Width attribute is the second
+                -> Height attribute is the third
+                -> x attribute is the fourth
+                -> Y atttribute is the fifth
+        """
+        if args and len(args) != 0:
+
+            pos = 0
+            for arg in args:
+                if pos == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
+
+                elif pos == 1:
+                    self.width = arg
+                elif pos == 2:
+                    self.height = arg
+                elif pos == 3:
+                    self.x = arg
+                elif pos == 4:
+                    self.y = arg
+                pos += 1
