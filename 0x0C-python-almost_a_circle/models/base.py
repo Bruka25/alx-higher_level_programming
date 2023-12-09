@@ -8,6 +8,7 @@
 """
 
 import json
+from os import path
 
 
 class Base:
@@ -83,3 +84,22 @@ class Base:
             dummy.update(**dictionary)
 
             return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """Function that returns a list
+           of instances
+        """
+        filename = cls.__name__ + '.json'
+
+        if path.exists(filename) is False:
+            return []
+
+        with open(filename, mode='r', encoding='utf-8') as file:
+            objects = cls.from_json_string(file.read())
+            inst = []
+
+            for elements in objects:
+                inst.append(cls.create(**elements))
+
+            return inst
