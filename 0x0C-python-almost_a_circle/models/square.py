@@ -92,7 +92,6 @@ class Square(Rectangle):
                 elif key == "y":
                     self.y = val
 
-
     def to_dictionary(self):
         """Function that returns the dictionary representation
            of a Rectangle

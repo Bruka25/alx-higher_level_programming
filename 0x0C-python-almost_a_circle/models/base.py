@@ -10,6 +10,7 @@
 import json
 from os import path
 import csv
+import turtle
 
 
 class Base:
@@ -149,3 +150,45 @@ class Base:
                 output = csv.DictWriter(csv_f, fieldnames=fieldnames)
                 for objects in list_objs:
                     output.writerow(objects.to_dictionary())
+
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """Function that Draws Rectangles and Squares
+          using the turtle gui
+
+          #FFA500 - Orange color for the rectangle
+          #00FF00 - Green color for the square
+        """
+        draw_turt = turtle.Turtle()
+        draw_turt.screen.bgcolor("#b7312c")
+        draw_turt.pensize(3)
+        draw_turt.shape("turtle")
+
+        draw_turt.color("#FFA500")
+        for r in list_rectangles:
+            draw_turt.showturtle()
+            draw_turt.up()
+            draw_turt.goto(r.x, r.y)
+            draw_turt.down()
+            for i in range(2):
+                draw_turt.forward(r.width)
+                draw_turt.left(90)
+                draw_turt.forward(r.height)
+                draw_turt.left(90)
+            draw_turt.hideturtle()
+
+        draw_turt.color("#00FF00")
+        for s in list_squares:
+            draw_turt.showturtle()
+            draw_turt.up()
+            draw_turt.goto(s.x, s.y)
+            draw_turt.down()
+            for i in range(2):
+                draw_turt.forward(s.width)
+                draw_turt.left(90)
+                draw_turt.forward(s.height)
+                draw_turt.left(90)
+            draw_turt.hideturtle()
+
+        turtle.exitonclick()
