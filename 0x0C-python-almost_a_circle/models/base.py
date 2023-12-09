@@ -7,6 +7,8 @@
    bugs
 """
 
+import json
+
 
 class Base:
     """Defines a base moduele for the other
@@ -27,3 +29,13 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Returns the encoded json representation
+           of python dictionaries
+        """
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return '[]'
+
+        return json.dumps(list_dictionaries)
