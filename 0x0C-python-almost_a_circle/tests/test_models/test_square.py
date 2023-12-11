@@ -99,5 +99,5 @@ class TestSquare(unittest.TestCase):
 
         sqr1.update(7, 6, 3, 2)
         sqr1_dictionary = sqr1.to_dictionary()
-        new_sqr = {'id': 7, 'x': 2, 'size': 6, 'y': 0}
+        new_sqr = {'id': 7, 'x': 3, 'size': 6, 'y': 2}
         self.assertEqual(sqr1_dictionary, new_sqr)

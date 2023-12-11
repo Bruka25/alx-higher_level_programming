@@ -335,10 +335,10 @@ class Test_create(unittest.TestCase):
         self.assertEqual("[Square] (7) 5/1 - 3", str(sqr1))
 
     def test_create_sqr_new(self):
-        sqr1 = Square(3, 5, 1, 7)
+        sqr1 = Square(3, 5, 5, 7)
         sqr1_dictionary = sqr1.to_dictionary()
         sqr2 = Square.create(**sqr1_dictionary)
-        self.assertEqual("[Square] (7) 5/1 - 1", str(sqr2))
+        self.assertEqual("[Square] (7) 5/5 - 3", str(sqr2))
 
     def test_create_sqr_is(self):
         sqr1 = Square(8, 5, 3, 7)
