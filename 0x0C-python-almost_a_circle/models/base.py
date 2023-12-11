@@ -151,7 +151,6 @@ class Base:
                 for objects in list_objs:
                     output.writerow(objects.to_dictionary())
 
-
     @staticmethod
     def draw(list_rectangles, list_squares):
         """Function that Draws Rectangles and Squares
