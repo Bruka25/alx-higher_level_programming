@@ -1,4 +1,3 @@
-
 -- Script that selects 'id' and 'name
 -- From the cities where the name is 'California'
 
@@ -9,4 +8,3 @@ WHERE state_id = (
       FROM states
       WHERE name = 'California'
 );
-ORDER BY id;
