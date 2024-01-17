@@ -2,8 +2,11 @@
 -- Results must be sorted in ascending order by the show title and genre name
 -- If the show doesn't have genre display NULL the genre column
 
-SELECT s.title, g.name
-FROM tv_shows s
-LEFT JOIN tv_show_genres m ON s.id = m.show_id
-LEFT JOIN tv_genres g ON m.genre_id = g.id
-ORDER BY s.title ASC;
+SELECT t.`title`, tvg.`name`
+  FROM `tv_shows` AS t
+       LEFT JOIN `tv_show_genres` AS tvs
+       ON t.`id` = tvs.`show_id`
+
+       LEFT JOIN `tv_genres` AS tvg
+       ON s.`genre_id` = tvg.`id`
+ ORDER BY t.`title`, tvg.`name`;
