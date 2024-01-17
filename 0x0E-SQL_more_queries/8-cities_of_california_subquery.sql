@@ -1,0 +1,12 @@
+
+-- Script that selects 'id' and 'name
+-- From the cities where the name is 'California'
+
+SELECT id, name
+FROM cities
+WHERE state_id = (
+      SELECT id
+      FROM states
+      WHERE name = 'California'
+);
+ORDER BY id;
