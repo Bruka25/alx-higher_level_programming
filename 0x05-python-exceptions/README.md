@@ -1,5 +1,6 @@
 0x05 Python Exceptions
-Welcome to the "0x05-python-exceptions" repository! This repository contains code related to Python exceptions, aimed athelping developers understand how to handle errors and exceptions effectively in Python programming.
+
+Welcome to the "0x05-python-exceptions" repository! This repository contains code related to Python exceptions, aimed athelping developersunderstand how to handle errors and exceptions effectively in Python programming.
 
 Table of Contents
 
