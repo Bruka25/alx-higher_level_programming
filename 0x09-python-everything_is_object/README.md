@@ -4,9 +4,13 @@ Welcome to the "0x09-python-everything_is_object" repository! This repository de
 Table of Contents
 
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

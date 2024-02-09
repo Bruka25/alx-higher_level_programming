@@ -2,10 +2,15 @@
 Welcome to the "0x0E-SQL_more_queries" repository! This repository expands on the fundamentals of SQL (Structured Query Language), covering advanced querying techniques, data manipulation operations, and database management tasks using SQL.
 
 Table of Contents
+
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

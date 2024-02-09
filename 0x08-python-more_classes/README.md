@@ -5,9 +5,13 @@ Welcome to the "0x08-python-more_classes" repository! This repository contains c
 Table of Contents
 
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

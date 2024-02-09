@@ -5,9 +5,13 @@ Welcome to the "0x06-python-classes" repository! This repository contains code r
 Table of Contents
 
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

@@ -2,10 +2,15 @@
 Welcome to the "0x0D-SQL_introduction" repository! This repository serves as an introduction to SQL (Structured Query Language), covering the basics of database management systems, SQL syntax, querying data, and performing various operations on databases using SQL.
 
 Table of Contents
+
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

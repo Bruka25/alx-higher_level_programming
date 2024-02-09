@@ -4,9 +4,13 @@ Welcome to the "0x0C-python-almost_a_circle" repository! This repository serves 
 Table of Contents
 
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

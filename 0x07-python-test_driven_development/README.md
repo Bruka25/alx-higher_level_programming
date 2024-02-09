@@ -3,10 +3,15 @@
 Welcome to the "0x07-python-test_driven_development" repository! This repository contains code related to test-driven development (TDD) inPython, aimed at helping developers understand how to write tests and develop software in a test-driven manner.
 
 Table of Contents
+
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

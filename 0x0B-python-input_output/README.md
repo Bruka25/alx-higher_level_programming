@@ -2,10 +2,15 @@
 Welcome to the "0x0B-python-input_output" repository! This repository explores input and output (I/O) operations in Python, covering various techniques for reading from and writing to files, as well as handling input and output streams in Python programs.
 
 Table of Contents
+
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction

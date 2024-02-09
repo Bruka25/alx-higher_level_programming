@@ -3,10 +3,15 @@
 Welcome to the "0x0A-python-inheritance" repository! This repository explores the concept of inheritance in Python, which is a fundamentalaspect of object-oriented programming (OOP). Inheritance allows classes to inherit attributes and methods from other classes, facilitatingcode reuse and promoting modularity in Python programs.
 
 Table of Contents
+
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction
