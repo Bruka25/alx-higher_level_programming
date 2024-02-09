@@ -14,9 +14,11 @@ Contributing
 License
 
 Introduction
+
 In Python programming, exceptions are events that occur during the execution of a program that disrupt the normal flow of the program's instructions. Properly handling exceptions is crucial for writing robust and reliable software. This repository provides examples and exercises related to Python exceptions to help developers become proficient in handling errors gracefully.
 
 Installation
+
 To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine:
