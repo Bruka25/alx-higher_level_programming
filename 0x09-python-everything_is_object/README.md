@@ -1,3 +1,57 @@
+0x09 Python Everything Is Object
+Welcome to the "0x09-python-everything_is_object" repository! This repository delves into the concept of objects in Python, exploring how everything in Python is an object and understanding the implications of this object-oriented paradigm.
+
+Table of Contents
+
+Introduction
+Installation
+Usage
+Contributing
+License
+
+Introduction
+In Python, everything is an object. This means that every variable, function, and data structure in Python is an object with its own attributes and methods. Understanding this fundamental concept is crucial for writing Python code effectively and leveraging the full power of the language's object-oriented features. This repository provides examples and explanations to help developers grasp the concept of objects in Python and how they impact programming in the language.
+
+Installation
+To use the code in this repository, follow these steps:
+
+1. Clone the repository to your local machine:
+
+```
+git clone https://github.com/Bruka25/alx-higher_level_programming
+```
+2. Navigate to the repository directory:
+
+```
+cd 0x09-python-everything_is_object
+```
+3. You're ready to explore the code related to objects in Python!
+
+Usage
+This repository contains Python scripts and examples, each focusing on different aspects of objects in Python. To make use of the repository:
+
+1. Navigate to the directory containing the Python scripts:
+
+```
+cd 0x09-python-everything_is_object
+```
+2. Explore the Python scripts available in the repository. Each script demonstrates a specific concept related to objects in Python.
+
+3. Open a Python script file to view the implementation and explanation of the concept.
+
+4. Study the provided Python code and accompanying explanations to understand the concept and its implications.
+
+5. Experiment with the code, modify it as needed, and test different scenarios to deepen your understanding of objects in Python.
+
+5. Feel free to use the provided code snippets and examples as references for working with objects in your own Python projects.
+
+Contributing
+Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
+
+License
+This repository is licensed under the MIT License. See the LICENSE file for details.
+
+
 The following project is called 0x09-python-everything_is_object, and it's for ALX high level programming curriculum, inside it conntains the following python scripts and text files:
 
 * The function used to get the type of an object

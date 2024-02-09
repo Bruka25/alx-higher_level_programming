@@ -1,3 +1,62 @@
+0x05 Python Exceptions
+Welcome to the "0x05-python-exceptions" repository! This repository contains code related to Python exceptions, aimed athelping developers understand how to handle errors and exceptions effectively in Python programming.
+
+Table of Contents
+Introduction
+Installation
+Usage
+Contributing
+License
+
+Introduction
+In Python programming, exceptions are events that occur during the execution of a program that disrupt the normal flow of the program's instructions. Properly handling exceptions is crucial for writing robust and reliable software. This repository provides examples and exercises related to Python exceptions to help developers become proficient in handling errors gracefully.
+
+Installation
+To use the code in this repository, follow these steps:
+
+1. Clone the repository to your local machine:
+
+```
+git clone https://github.com/Bruka25/alx-higher_level_programming
+```
+2. Navigate to the repository directory:
+
+```
+cd 0x05-python-exceptions
+```
+3. You're ready to explore the code related to Python exceptions!
+
+Usage
+
+This repository contains Python scripts, each representing a specific question related to Python exceptions along with its corresponding solution. To make use of the repository:
+
+1. Navigate to the directory containing the Python scripts:
+
+```
+cd 0x05-python-exceptions
+```
+2. Explore the Python scripts available in the repository. Each Python script is named descriptively to indicate the question it addresses
+
+3. Open a Python script file to view both the question and its solution within the same file. The script typically consists of the following sections:
+
+           -> Description of the problem or question.
+           -> Python code implementing the solution to the problem.
+
+4. Study the provided Python code to understand the problem and solution approach.
+
+5. Modify the code as needed, experiment with different solutions, and test them to deepen your understanding of Python exceptions.
+
+6. Feel free to use the provided code snippets in your own projects or learning exercises, ensuring to understand how and why they work.
+
+Contributing
+
+Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
+
+License
+
+This repository is licensed under the MIT License. See the LICENSE file for details.
+
+
 The following projects are for ALX 0x05-python-exceptions for the alx higher level programming curriculum, inside it contains the following python files:
 
 * A function that prints x elements of a list
