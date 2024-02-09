@@ -4,9 +4,13 @@ Welcome to the "0x05-python-exceptions" repository! This repository contains cod
 Table of Contents
 
 Introduction
+
 Installation
+
 Usage
+
 Contributing
+
 License
 
 Introduction
