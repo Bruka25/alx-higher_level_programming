@@ -15,9 +15,11 @@ Contributing
 License
 
 Introduction
+
 Building upon the basics of classes introduced in earlier modules, "0x08-python-more_classes" explores more advanced concepts such as class methods, class attributes, inheritance, and special methods (also known as magic methods) in Python. These concepts are essential for developing complex software systems and understanding the intricacies of object-oriented programming.
 
 Installation
+
 To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine:
@@ -33,6 +35,7 @@ cd 0x08-python-more_classes
 3. You're ready to explore the code related to more advanced Python classes!
 
 Usage
+
 This repository contains Python scripts, each focusing on specific aspects of more advanced Python classes. To make use of the repository:
 
 1. Navigate to the directory containing the Python scripts:
@@ -51,9 +54,11 @@ cd 0x08-python-more_classes
 4. Feel free to use the provided code snippets as templates for implementing more advanced classes in your own projects.
 
 Contributing
+
 Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
 
 License
+
 This repository is licensed under the MIT License. See the LICENSE file for details.
 
 

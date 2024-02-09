@@ -1,4 +1,5 @@
 0x09 Python Everything Is Object
+
 Welcome to the "0x09-python-everything_is_object" repository! This repository delves into the concept of objects in Python, exploring how everything in Python is an object and understanding the implications of this object-oriented paradigm.
 
 Table of Contents
@@ -14,9 +15,11 @@ Contributing
 License
 
 Introduction
+
 In Python, everything is an object. This means that every variable, function, and data structure in Python is an object with its own attributes and methods. Understanding this fundamental concept is crucial for writing Python code effectively and leveraging the full power of the language's object-oriented features. This repository provides examples and explanations to help developers grasp the concept of objects in Python and how they impact programming in the language.
 
 Installation
+
 To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine:
@@ -32,6 +35,7 @@ cd 0x09-python-everything_is_object
 3. You're ready to explore the code related to objects in Python!
 
 Usage
+
 This repository contains Python scripts and examples, each focusing on different aspects of objects in Python. To make use of the repository:
 
 1. Navigate to the directory containing the Python scripts:
@@ -50,9 +54,11 @@ cd 0x09-python-everything_is_object
 5. Feel free to use the provided code snippets and examples as references for working with objects in your own Python projects.
 
 Contributing
+
 Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
 
 License
+
 This repository is licensed under the MIT License. See the LICENSE file for details.
 
 

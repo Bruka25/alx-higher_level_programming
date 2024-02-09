@@ -1,4 +1,5 @@
 0x0D SQL Introduction
+
 Welcome to the "0x0D-SQL_introduction" repository! This repository serves as an introduction to SQL (Structured Query Language), covering the basics of database management systems, SQL syntax, querying data, and performing various operations on databases using SQL.
 
 Table of Contents
@@ -14,9 +15,11 @@ Contributing
 License
 
 Introduction
+
 SQL (Structured Query Language) is a standard programming language used for managing and manipulating relational databases. It allows users to define, access, and manipulate data stored in a relational database management system (RDBMS). This repository provides examples and exercises to help developers understand the fundamentals of SQL and become proficient in using SQL for data management and manipulation.
 
 Installation
+
 To use the code and examples in this repository, follow these steps:
 
 1. Install a relational database management system (RDBMS) such as MySQL, PostgreSQL, SQLite, or MariaDB on your local machine or server.
@@ -57,9 +60,11 @@ cd 0x0D-SQL_introduction
 7. Feel free to use the provided SQL scripts and examples as references for working with SQL databases in your own projects.
 
 Contributing
+
 Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
 
 License
+
 This repository is licensed under the MIT License. See the LICENSE file for details.
 
 

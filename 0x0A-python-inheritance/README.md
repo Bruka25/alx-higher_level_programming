@@ -15,9 +15,11 @@ Contributing
 License
 
 Introduction
+
 Inheritance is a powerful mechanism in Python that enables code reuse and promotes a hierarchical structure in class relationships. With inheritance, a class (subclass) can inherit attributes and methods from another class (superclass), allowing for the extension and specialization of functionality. This repository provides examples and exercises related to inheritance in Python to help developers understand how to leverage this feature effectively.
 
 Installation
+
 To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine:
@@ -33,6 +35,7 @@ cd 0x0A-python-inheritance
 3. You're ready to explore the code related to inheritance in Python!
 
 Usage
+
 This repository contains Python scripts and examples, each focusing on different aspects of inheritance in Python. To make use of the repository:
 
 1. Navigate to the directory containing the Python scripts:
@@ -51,9 +54,11 @@ cd 0x0A-python-inheritance
 6. Feel free to use the provided code snippets and examples as references for implementing inheritance in your own Python projects.
 
 Contributing
+
 Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
 
 License
+
 This repository is licensed under the MIT License. See the LICENSE file for details.
 
 

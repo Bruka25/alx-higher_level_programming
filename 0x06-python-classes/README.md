@@ -15,9 +15,11 @@ Contributing
 License
 
 Introduction
+
 Classes are a fundamental concept in object-oriented programming (OOP). In Python, classes allow you to create new types of objects with their own attributes and methods. This repository provides examples and exercises related to Python classes to help developers become proficient in object-oriented programming.
 
 Installation
+
 To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine:
@@ -60,6 +62,7 @@ Contributing
 Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
 
 License
+
 This repository is licensed under the MIT License. See the LICENSE file for details.
 
 

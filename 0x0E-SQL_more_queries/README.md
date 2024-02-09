@@ -1,4 +1,5 @@
 0x0E SQL More Queries
+
 Welcome to the "0x0E-SQL_more_queries" repository! This repository expands on the fundamentals of SQL (Structured Query Language), covering advanced querying techniques, data manipulation operations, and database management tasks using SQL.
 
 Table of Contents
@@ -14,9 +15,11 @@ Contributing
 License
 
 Introduction
+
 "0x0E-SQL_more_queries" builds upon the foundational knowledge of SQL introduced in previous modules, delving into more advanced querying techniques and data manipulation operations. It covers a wide range of SQL topics, including joins, subqueries, aggregate functions, data modification commands, and database administration tasks, to provide developers with a comprehensive understanding of SQL and its applications in database management and analysis.
 
 Installation
+
 To use the code and examples in this repository, follow these steps:
 
 1. Ensure you have a relational database management system (RDBMS) such as MySQL, PostgreSQL, SQLite, or MariaDB installed on your local machine or server.
@@ -36,6 +39,7 @@ cd 0x0E-SQL_more_queries
 5. You're ready to explore the advanced SQL examples and exercises provided in the repository!
 
 Usage
+
 This repository contains SQL scripts and examples, each focusing on different advanced SQL topics, such as joins, subqueries, aggregate functions, data modification commands, and database administration tasks. To make use of the repository:
 
 1. Connect to your local or remote database using the SQL client or CLI tool.
@@ -57,9 +61,11 @@ cd 0x0E-SQL_more_queries
 7. Feel free to use the provided SQL scripts and examples as references for working with advanced SQL techniques in your own projects.
 
 Contributing
+
 Contributions to this repository are welcome! If you have ideas for improving existing code, adding new examples, or fixing issues, please feel free to submit a pull request. Before contributing, please review the contribution guidelines.
 
 License
+
 This repository is licensed under the MIT License. See the LICENSE file for details.
 
 
