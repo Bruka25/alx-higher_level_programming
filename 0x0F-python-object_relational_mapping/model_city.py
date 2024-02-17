@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script that contains a class definition 
+"""Python script that contains a class definition
    of a city
 """
 from model_state import State
