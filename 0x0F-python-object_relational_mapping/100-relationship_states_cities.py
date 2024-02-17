@@ -1,4 +1,4 @@
-#!/usr/bin.python3
+#!/usr/bin/python3
 """python script to creates state 'California' with
    the city 'San Francisco' from the database using
    sqlalchemy
