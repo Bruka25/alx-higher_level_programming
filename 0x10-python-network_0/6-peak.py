@@ -5,7 +5,7 @@
 
 
 def find_peak(list_of_integers):
-    """ Function that findsa peak in a list of 
+    """ Function that findsa peak in a list of
         unsorted integers
     """
     if list_of_integers == []:
