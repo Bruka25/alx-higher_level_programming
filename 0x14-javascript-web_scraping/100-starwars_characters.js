@@ -7,7 +7,7 @@ req.get(endPoint, function (err, response, body) {
   } else if (response.statusCode === 200) {
     const characters = JSON.parse(body).characters;
     characters.forEach(character => {
-      request.get(character, function (err, response, body) {
+      req.get(character, function (err, response, body) {
         if (err) {
           throw err;
         } else if (response.statusCode === 200) {
