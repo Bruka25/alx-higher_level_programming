@@ -1,5 +1,6 @@
 The following files are for the ALX 0x15-javascript-web_jquery project for the alx-higher_level_programming curriculum, inside it contains the following Javascripts:
 
+
 * A JavaScript script that updates the text color of the <header> element to red (#FF0000)
 * A JavaScript script that updates the text color of the <header> element to red (#FF0000)
 * A JavaScript script that updates the text color of the <header> element to red (#FF0000) when the user clicks on the tag DIV#red_header
